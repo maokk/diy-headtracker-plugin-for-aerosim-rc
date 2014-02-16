@@ -15,8 +15,12 @@ How to run:
 1. Run AeroSIM-RC;
 2. Open "Plugin" menu;
 3. Click to "DIYHT - DIY Headtracker plugin";
-4. Menu "DIYHT - DIY Headtracker plugin" will appear. You can control, which FPV camera axes are controlled by DIYHT;
+4. Menu "DIYHT - DIY Headtracker plugin" will appear. You can control, which FPV camera axis are controlled by DIYHT;
 5. Switch to FPV camera (F4);
 6. Optionally reset you DIY Headtracker by pressing a button;
 7. Fly!
 
+Notes:
+
+1. To show raw values, FPV camera signals and DIYHT connection status please enable "Show debug info" command in "Plugin" menu. It will output over the screen.
+2. If your DIYHT is reversed by some axis, use its GUI utility to change reverse. 
