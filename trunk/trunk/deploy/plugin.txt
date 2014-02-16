@@ -1,0 +1,66 @@
+//----------------------------------------------------------------------------- 
+// Plugin Name
+//----------------------------------------------------------------------------- 
+.NAME    "DIYHT - DIY HeadTracker Plugin"
+
+//----------------------------------------------------------------------------- 
+// Help texts
+//----------------------------------------------------------------------------- 
+.HELP_EN "\
+This is a plugin to control FPV camera with DIY Headtracker connected via USB port.\n\
+Features:\n\
+ - Separate control enablement for pitch, roll and pan\n\
+ - COM port and its baud rate is selectable via DIYHT.TXT\n\
+ - Can fly demo version without transmitter, but with headtracker"
+
+//----------------------------------------------------------------------------- 
+// OSD Image Buffer Size
+// Possible values are 512x512, 1024x512 and 1024x1024
+//----------------------------------------------------------------------------- 
+.OSD_VIDEO_BUFFER_SIZE    512x512 
+
+
+//----------------------------------------------------------------------------- 
+// This image is shown in a window when the plugin is started.
+// The image can be a picture of the HW simulated
+// If controls are represented in the image (e.g. buttons, LEDs), these can be mapped to menu items
+//
+// The "OFF" image is drawn first, and then the rects from the images "ON", "ON_MOUSE_HOVER" and "OFF_MOUSE_HOVER", are drawn on top as required.
+//
+// Options:
+//   1 - do not define any Image.  There will be no plugin window
+//   2 - define only Image_OFF.    A white rectangle will be superimposed when ON.
+//   3 - define Images_OFF and ON. A white flashing rectangle will be superimposed when Mouse is hovering over controls.
+//   4 - define Images_OFF, ON, ON_MOUSE_HOVER, ON_MOUSE_HOVER. To have the best quality.
+//----------------------------------------------------------------------------- 
+.IMAGE_OFF                 ""              // background image with all buttons/checkboxes OFF
+.IMAGE_ON                  ""               //            image with all buttons/checkboxes ON
+.IMAGE_OFF_MOUSE_HOVER     ""        //            image with all buttons/checkboxes OFF and highlight when mouse is over a MOUSE_RECT
+.IMAGE_ON_MOUSE_HOVER      ""         //            image with all buttons/checkboxes ON  and highlight when mouse is over a MOUSE_RECT
+
+
+//----------------------------------------------------------------------------- 
+// Menu items
+//----------------------------------------------------------------------------- 
+.MENU_ITEM_00_NAME              "Control Camera Pitch"
+.MENU_ITEM_00_TYPE              CHECKBOX
+.MENU_ITEM_00_HAS_SEPARATOR     0
+.MENU_ITEM_00_MOUSE_RECT_XY     0 0
+.MENU_ITEM_00_MOUSE_RECT_DXDY   0 0
+.MENU_ITEM_00_HIDE_MENU_ITEM    0
+
+.MENU_ITEM_01_NAME              "Control Camera Roll"
+.MENU_ITEM_01_TYPE              CHECKBOX
+.MENU_ITEM_01_HAS_SEPARATOR     0
+.MENU_ITEM_01_MOUSE_RECT_XY     0 0
+.MENU_ITEM_01_MOUSE_RECT_DXDY   0 0
+.MENU_ITEM_01_HIDE_MENU_ITEM    0
+
+.MENU_ITEM_02_NAME              "Control Camera Pan"
+.MENU_ITEM_02_TYPE              CHECKBOX
+.MENU_ITEM_02_HAS_SEPARATOR     0
+.MENU_ITEM_02_MOUSE_RECT_XY     0 0
+.MENU_ITEM_02_MOUSE_RECT_DXDY   0 0
+.MENU_ITEM_02_HIDE_MENU_ITEM    0
+
+
